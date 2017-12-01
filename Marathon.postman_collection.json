@@ -1,0 +1,379 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Marathon",
+		"_postman_id": "64a909f4-1aef-37eb-709a-914460fe2be5",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getMarathons",
+			"request": {
+				"url": "http://localhost:8888/tomcatembedded/rest/marathon/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getMarathon1002",
+			"request": {
+				"url": "http://localhost:8888/tomcatembedded/rest/marathon/1002",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateMarathon1002",
+			"request": {
+				"url": "http://localhost:8888/tomcatembedded/rest/marathon/",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "100km de Biel/Bienne",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Biel/Bienne",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1002",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "createMarathon1004",
+			"request": {
+				"url": "http://localhost:8888/tomcatembedded/rest/marathon/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Marathon Zürich",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Zürich",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1004",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteMarathon1000",
+			"request": {
+				"url": "http://localhost:8888/tomcatembedded/rest/marathon/1000",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "createCategory2020",
+			"request": {
+				"url": "http://localhost:8888/tomcatembedded/rest/marathon/1003/category",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "idCategory",
+							"value": "2020",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "nameCategory",
+							"value": "Semi-Marathon",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "DateOfRunCategory",
+							"value": "20.10.2018",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "maxPersonCategory",
+							"value": "-1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "RegistrationFees",
+							"value": "45",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "maxAge",
+							"value": "1900",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "minAge",
+							"value": "2000",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateNameCategory2010",
+			"request": {
+				"url": "http://localhost:8888/tomcatembedded/rest/marathon/1003/category",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "idCategory",
+							"value": "2010",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "nameCategory",
+							"value": "Grand Marathon",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCategory2005",
+			"request": {
+				"url": "http://localhost:8888/tomcatembedded/rest/marathon/1001/category/2005",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getPersons",
+			"request": {
+				"url": "http://localhost:8888/tomcatembedded/rest/person",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getPerson3001",
+			"request": {
+				"url": "http://localhost:8888/tomcatembedded/rest/person/3001",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "createPerson3010",
+			"request": {
+				"url": "http://localhost:8888/tomcatembedded/rest/person/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "3010",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "firstName",
+							"value": "Sabrina",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Hillow",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "birthDate",
+							"value": "15.03.1997",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updatePerson3006",
+			"request": {
+				"url": "http://localhost:8888/tomcatembedded/rest/person/",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "3006",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "firstName",
+							"value": "Ana",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Bart",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deletePerson3007",
+			"request": {
+				"url": "http://localhost:8888/tomcatembedded/rest/person/3007",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "addPerson3002Category2010",
+			"request": {
+				"url": "http://localhost:8888/tomcatembedded/rest/marathon/1003/category/2010/person/3002",
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePerson3005Category2010",
+			"request": {
+				"url": "http://localhost:8888/tomcatembedded/rest/marathon/1003/category/2010/person/3005",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Person3002Runs",
+			"request": {
+				"url": "http://localhost:8888/tomcatembedded/rest/person/3002/runs",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
